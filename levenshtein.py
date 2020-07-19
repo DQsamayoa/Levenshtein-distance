@@ -250,6 +250,33 @@ class Levenshtein:
         Returns
         -------
         int
+            The minimum number of insert, delete and substitutions to transform
+            one string into other
+
+        """
+
+        dist, row, col = self.iterative_matrix(source_input, target_input)
+
+        return dist[row][col]
+
+    def similarity(self, source_input, target_input):
+        """ Compute the Levenshtein similarity between the strings provided.
+
+        Parameters
+        ----------
+        source_input: string
+            A string to compare with the target_input
+        
+        target_input: string
+            A string to compare with the source_input
+        
+        Raises
+        ------
+        NotImplementedError
+        
+        Returns
+        -------
+        int
             It will contain the Levenshtein distance between the first i
             characters of source_input and the first j characters of
             target_input
@@ -258,4 +285,6 @@ class Levenshtein:
 
         dist, row, col = self.iterative_matrix(source_input, target_input)
 
-        return dist[row][col]
+        sim = 1 - (dist[row][col] / max(row, col))
+        
+        return sim
