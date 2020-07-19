@@ -17,10 +17,17 @@ class Levenshtein:
             A string with all the symbols used in the language.
             Example: symbols = '?! '
 
-        weight_dict: dictionary of str: tuple(int, int, int), optional
+        weight_dict:
+            dictionary of str: tuple(delete, insert, substitute), optional
             Keyword parameters setting the costs for characters  with the
             desired weights for the characters in the alphabet and symbols
             parameters.
+            delete: int
+                Cost for delete a specific character (default 1)
+            insert: int
+                Cost for insert a specific character (default 1)
+            substitute: int
+                Cost for substitute a specific character (default 1)
             (default {char: (1, 1, 1)} for all characters in the alphabet)
             Example: weight_dict = {'a': (1, 2, 3), 'á': (3, 1, 5)}
 
