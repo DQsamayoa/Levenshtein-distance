@@ -1,0 +1,23 @@
+[
+	{
+		"id": 0,
+		"language": "french",
+		"languageCode": "fr-fr",
+		"letter": "abcdefghijklmnopqrstuvwxyzâêîôûàèùëïüéæœçÿ",
+		"symbol": ".,:;'!?"
+	},
+	{
+		"id": 1,
+		"language": "english",
+		"languageCode": "en-us",
+		"letter": "abcdefghijklmnopqrstuvwxyz",
+		"symbol": ".,:;'!?"
+	},
+	{
+		"id": 2,
+		"language": "spanish",
+		"languageCode": "es-mx",
+		"letter": "abcdefghijklmnñopqrstuvwxyzáéíóúü",
+		"symbol": ".,:;¡!¿?"
+	}
+]
