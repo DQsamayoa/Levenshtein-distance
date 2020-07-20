@@ -1,1 +1,1 @@
-from .levenshtein-distance import levenshtein
+from .levenshtein import levenshtein
