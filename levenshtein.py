@@ -1,7 +1,7 @@
 
 class Levenshtein:
 
-    def __init__(self, alphabet, symbols, weight_dict = None, language = None):
+    def __init__(self, alphabet, symbols, weight_dict = {}, language = None):
         """ Initialize the levenshtein distance with a specific alphabet and
             set of symbols and an optional predefined set of weights.
 
