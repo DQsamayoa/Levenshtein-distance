@@ -1,1 +1,4 @@
-from .levenshtein import levenshtein
+__all__ = ['levenshtein.py']
+
+# Defining the modules to import
+from .levenshtein import *
