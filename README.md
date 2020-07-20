@@ -4,14 +4,17 @@ Levenshtein Distance
 --------
 
 To use this package you can installing as follow
-::
-    pip install git+https://github.com/dqsamayoa/pyLevenshteinDistance
+```bash
+pip install git+https://github.com/dqsamayoa/pyLevenshteinDistance
+```
 
-Y en python se ejecuta lo siguiente:
-::
-    >>> import levenshtein
-    >>> metric = levenshtein.Levenshtein('abcd', '!?')
-    >>> metric.distance('levenshtein', 'levensthain')
+In order to use the levenshteind distance you should do the next:
+
+```python
+>>> import levenshtein
+>>> metric = levenshtein.Levenshtein('abcd', '!?')
+>>> metric.distance('levenshtein', 'levensthain')
+```
 
 Requirements
 --------
