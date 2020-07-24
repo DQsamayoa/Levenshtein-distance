@@ -1,6 +1,4 @@
-<img src="https://raw.githubusercontent.com/DQsamayoa/personal-webpage/master/imgs/logo_vs_b.png" alt="logo" align="right" height="200">
-
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+|LOGO| |LICENSE|
 
 Levenshtein Distance
 --------
@@ -27,3 +25,16 @@ The libraries need for this are:
 - cython 
 
 Cythons is only for compile purposes.
+
+
+
+
+.. |LOGO| image:: https://raw.githubusercontent.com/DQsamayoa/personal-webpage/master/imgs/logo_vs_b.png
+	:align: right
+	:height: 200px
+	:target: https://github.com/DQsamayoa/pyLevenshteinDistance/
+	:alt: logo
+
+.. |LICENSE| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
+	:target: https://opensource.org/licenses/Apache-2.0
+	:alt: License Apache 2.0
