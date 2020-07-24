@@ -4,18 +4,17 @@ Levenshtein Distance
 --------
 
 To use this package you can installing as follow
-::
-	pip install git+https://github.com/dqsamayoa/pyLevenshteinDistance
-
+```bash
+pip install git+https://github.com/dqsamayoa/pyLevenshteinDistance
+```
 
 In order to use the levenshteind distance you should do the next:
 
-.. code-block:: python
-
-  >>> import levenshtein
-  >>> metric = levenshtein.Levenshtein('abcd', '!?')
-  >>> metric.distance('levenshtein', 'levensthain')
-
+```python
+>>> import levenshtein
+>>> metric = levenshtein.Levenshtein('abcd', '!?')
+>>> metric.distance('levenshtein', 'levensthain')
+```
 
 Requirements
 --------
@@ -33,6 +32,7 @@ Cythons is only for compile purposes.
 .. |LOGO| image:: https://raw.githubusercontent.com/DQsamayoa/personal-webpage/master/imgs/logo_vs_b.png
 	:align: right
 	:height: 200px
+	:target: https://github.com/DQsamayoa/pyLevenshteinDistance/
 	:alt: logo
 
 .. |LICENSE| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
