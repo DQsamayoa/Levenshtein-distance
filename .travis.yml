@@ -1,4 +1,5 @@
 language: python
+dist: bionic
 python:
   - 3.5
   - 3.6
@@ -10,9 +11,10 @@ before_install:
 #  - pip install codecov
 # install package + test dependencies
 install:
-  - pip install ".[test]" . 
+  - pip install ".[test]" .
 # run test
-script: pytest
+script:
+  - python3 -m pytest
 # submit coverage
 #after_success:
 #  - codecov
