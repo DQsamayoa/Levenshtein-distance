@@ -229,6 +229,13 @@ class Levenshtein:
                 dist[row][col] = min(dist[row - 1][col] + deletes, # delete
                                      dist[row][col-1] + inserts, # insert
                                      dist[row - 1][col - 1] + subs) # substitution
+
+        # This step is to fix the error due to empty string
+        if cols == 1:
+            col = 0
+
+        if rows == 1:
+            row = 0
      
         return dist, row, col
 
