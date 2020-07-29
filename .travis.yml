@@ -15,7 +15,7 @@ install:
   - pip install ".[test]" .
 # run test
 script:
-  - pytest --cov-report --cov==levenshtein tests/
+  - pytest --cov-report= --cov=levenshtein tests/
 # submit coverage
 after_success:
   - codecov
