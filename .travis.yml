@@ -8,16 +8,14 @@ before_install:
   - python --version
   - pip install -U pip
   - pip install -U pytest
-  - pip install -U coveralls
-#  - pip install codecov
+  - pip install codecov
 # install package + test dependencies
 install:
   - pip install ".[test]" .
 # run test
 script:
   - python3 -m pytest
-  - coverage run --source=mypkg -m pytest tests/
 # submit coverage
 after_success:
-  - coveralls
+  - codecov
 
