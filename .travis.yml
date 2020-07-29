@@ -16,6 +16,6 @@ install:
 script:
   - python3 -m pytest
 # submit coverage
-#after_success:
-#  - codecov
+after_success:
+  - coveralls
 
