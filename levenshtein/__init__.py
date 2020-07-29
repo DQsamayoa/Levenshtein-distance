@@ -9,9 +9,9 @@ Levenshtein = levenshtein.Levenshtein
 
 # Defining variables to import
 tmp_this_dir, tmp_this_filename = os.path.split(__file__)
-tmp_data_path = os.path.join(rmp_this_dir, "data", "alphabet.json")
+tmp_data_path = os.path.join(tmp_this_dir, "data", "alphabet.json")
 
-with open(rmp_data_path) as json_file:
+with open(tmp_data_path) as json_file:
     alphabet_json = json.load(json_file)
 
 # Deleting temporary variables
