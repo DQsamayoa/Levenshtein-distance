@@ -78,7 +78,8 @@ def test_iterative_matrix(source_input, target_input, expected_result):
 
 @pytest.mark.parametrize('source_input, target_input, expected_result', [
     ('ab', 'ab', 0),
-    ('ab', 'ac', 1)
+    ('ab', 'ac', 1),
+    ('ab', 'a!', 1)
 ])
 def test_distance(source_input, target_input, expected_result):
     metric = levenshtein.Levenshtein('a', '.')
@@ -95,3 +96,13 @@ def test_distance(source_input, target_input, expected_result):
 def test_weighted_distance(source_input, target_input, weight_dict, expected_result):
     metric = levenshtein.Levenshtein('ab', '.', weight_dict)
     assert metric.distance(source_input, target_input) == expected_result
+
+@pytest.mark.parametrize('source_input, target_input, expected_result', [
+    ('a', 'a', 1),
+    ('', 'a', 0),
+    ('b', 'a', 0),
+    ('levenshtein', 'levshtain', 0.73),
+])
+def test_weighted_similarity(source_input, target_input, expected_result):
+    metric = levenshtein.Levenshtein('ab', '.')
+    assert metric.similarity(source_input, target_input) == pytest.approx(expected_result, abs = 5e-3)
